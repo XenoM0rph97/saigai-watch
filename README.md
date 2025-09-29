@@ -1,6 +1,6 @@
 # Saigai Watch
 
-Saigai Watch is a client side, simple seimsic activity monitoring dashboard designed to provide real-time information about natural events in Japan.
+Saigai Watch is a client side, simple seismic activity monitoring dashboard designed to provide real-time information about natural events in Japan.
 
 ## Features
 
