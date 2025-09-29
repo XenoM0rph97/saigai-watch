@@ -11,6 +11,9 @@ Saigai Watch is a client side, simple seismic activity monitoring dashboard desi
 ## Live Demo
 [https://xenom0rph97.github.io/saigai-watch/](https://xenom0rph97.github.io/saigai-watch/)
 
+## Dashboard Example
+![Saigai Watch UI](./resources/dashboard.png)
+
 ## Contributing
 
 Contributions are welcome! Please open issues or submit pull requests.
