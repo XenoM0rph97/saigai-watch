@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saigai Watch | 災害監視</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>Saigai Watch | <span lang="ja">災害監視</span></h1>
+        <p id="description-text">Monitoring recent seismic events in Japan (Magnitude 2.5+). Displaying data about the last 48 hours.</p>
+
+        <div id="controls-container">
+            <button id="toggle-lang" onclick="toggleLanguage()">日本語</button>
+
+            <div class="toggle-switch-wrapper">
+                <input type="checkbox" id="dark-mode-toggle" checked onclick="toggleDarkMode()">
+                <label for="dark-mode-toggle" id="dark-mode-label">
+                    <div class="icon-sun"></div> 
+                    <div class="icon-moon"></div> 
+                </label> 
+            </div>
+
+            
+        </div>
+    </header>
+    
+    <div id="dashboard-container">
+        
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+
+        <main id="earthquake-list">
+            <p id="loading-status">Loading USGS data...</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>Data provided by <a href="https://earthquake.usgs.gov/" target="_blank">USGS</a>. | <span id="footer-update">Last updated: in progress...</span></p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
